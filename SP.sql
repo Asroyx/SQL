@@ -44,3 +44,15 @@ BEGIN
 	-- SQL İfadeleri...
 END
 
+-- Kullanıcı prosedürü nasıl değiştirir
+ALTER PROCEDURE ProsedürAdı
+AS
+BEGIN
+	-- SQL İfadeler baştan yazılacak...
+END
+
+-- Kullanıcı prosedürü nasıl değiştirir
+DROP PROCEDURE ProsedürAdı
+
+CREATE/ALTER/DROP PROC prosedürAdı yazılabilir
+-- PROCEDURE kısaltması PROC
