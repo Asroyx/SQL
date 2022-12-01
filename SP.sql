@@ -66,4 +66,17 @@ BEGIN
 END
 GO
 SP_HELPTEXT MüşteriListele
--- Prosedürü değiştirelim telefon numarası da göstersin
+-- Prosedürü değiştirelim telefon numarası da göstersin, 
+-- telefon numarası olmayanları göstermesin
+SELECT * FROM Müşteriler
+
+ALTER PROCEDURE MüşteriListele
+AS 
+BEGIN
+	SELECT Adı,Soyadı,İl,İlçe, Telefon
+	FROM Müşteriler
+	WHERE Telefon IS NOT NULL
+	ORDER BY İl, İlçe, Soyadı,Adı
+END
+GO
+MüşteriListele -- Seç, F5/EXECUTE Çalıştırmak için prosedürün adını sunucuya gönderir
