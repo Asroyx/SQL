@@ -56,3 +56,14 @@ DROP PROCEDURE ProsedürAdı
 
 CREATE/ALTER/DROP PROC prosedürAdı yazılabilir
 -- PROCEDURE kısaltması PROC
+
+-- Müşterileri listeleyen bir prosedür yazalım
+CREATE PROCEDURE MüşteriListele
+AS
+BEGIN
+	SELECT Adı,Soyadı,İl,İlçe FROM Müşteriler
+	ORDER BY il, İlçe, Soyadı, Adı
+END
+GO
+SP_HELPTEXT MüşteriListele
+-- Prosedürü değiştirelim telefon numarası da göstersin
