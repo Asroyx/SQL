@@ -33,5 +33,14 @@ SP_HELPTEXT MüşterilerGörünümü
 SP_HELP ToplamSiparişTutarı -- fonksiyon
 SP_HELPTEXT ÜrünEkle -- Prosedür
 
-SP_DEPENDS: Verilen VT nesnesine dayanan VT nesnelerini listeler
+-- SP_DEPENDS: Verilen VT nesnesine dayanan VT nesnelerini listeler
 SP_DEPENDS Siparişler
+SP_DEPENDS [Sipariş Detayları]
+
+-- Kullanıcı Prosedür yaratmak için:
+CREATE PROCEDURE ProsedürAdı GirenDeğişkenler, ÇıkanDeğişken OUTPUT
+AS
+BEGIN
+	-- SQL İfadeleri...
+END
+
