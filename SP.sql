@@ -29,3 +29,9 @@ SP_HELP MüşterilerGörünümü
 SP_HELP Müşteriler
 
 SP_HELPTEXT MüşterilerGörünümü
+
+SP_HELP ToplamSiparişTutarı -- fonksiyon
+SP_HELPTEXT ÜrünEkle -- Prosedür
+
+SP_DEPENDS: Verilen VT nesnesine dayanan VT nesnelerini listeler
+SP_DEPENDS Siparişler
